@@ -1,0 +1,27 @@
+$brand-dark: #504d4b;
+$brand-light: #f8f7f2;
+$brand-white: #fff;
+$brand-dark-text: #231f20;
+$brand-light-text: $brand-light;
+
+$color__background-body: $brand-light;
+$color__background-content: $brand-white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: $brand-dark-text;
+$color__text-input: lighten($brand-dark-text, 5%);
+$color__text-input-focus: $brand-dark-text;
+$color__link: darken($brand-dark-text, 5%);
+$color__link-visited: $brand-dark-text;
+$color__link-hover: $brand-dark-text;
+$color__text-main: $brand-dark-text;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

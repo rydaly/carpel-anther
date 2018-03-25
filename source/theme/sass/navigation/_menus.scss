@@ -1,0 +1,139 @@
+.main-navigation {
+	display: block;
+	background-color: $color__background-body;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		// ul {
+		// 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		// 	float: left;
+		// 	position: absolute;
+		// 	top: 100%;
+		// 	left: -999em;
+		// 	z-index: 99999;
+    //
+		// 	ul {
+		// 		left: -999em;
+		// 		top: 0;
+		// 	}
+    //
+		// 	li {
+		// 		&:hover > ul,
+		// 		&.focus > ul {
+		// 			left: 100%;
+		// 		}
+		// 	}
+    //
+		// 	a {
+		// 		width: 200px;
+		// 	}
+    //
+		// 	:hover > a,
+		// 	.focus > a {
+		// 	}
+    //
+		// 	a:hover,
+		// 	a.focus {
+		// 	}
+		// }
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		display: inline-block;
+		position: relative;
+		padding: $padding-3;
+
+		&:hover > a,
+		&.focus > a {
+		}
+
+		&.icon {
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+			background-position: center;
+			vertical-align: middle;
+			margin-bottom: 1px;
+
+			&--insta {
+				background-image: url('./images/icons/instagram.svg');
+			}
+
+			&--twitter {
+				background-image: url('./images/icons/twitter.svg');
+			}
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+
+  // Upper Right Nav
+	&--upper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-left: $padding-2;
+	}
+
+  // Lower Left Nav
+	&--lower {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-right: $padding-2;
+	}
+
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

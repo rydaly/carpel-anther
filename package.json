@@ -1,0 +1,51 @@
+{
+  "name": "carpel-anther",
+  "version": "1.0.0",
+  "description": "A Custom Wordpress Theme",
+  "main": "gulpfile.js",
+  "keywords": [],
+  "homepage": "",
+  "author": "Ryan Daly",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "private": false,
+  "license": "UNLICENSED",
+  "scripts": {
+    "postinstall": "bash postnpminstall.sh",
+    "start": "opn http://carpelanther.dev && gulp",
+    "build": "gulp build",
+    "deploy": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^4.0.0-rc.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "http-proxy": "^1.16.2",
+    "opn-cli": "^3.1.0",
+    "postcss-assets": "^5.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
