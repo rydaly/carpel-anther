@@ -63,4 +63,14 @@
 
 	</header><!-- #masthead -->
 
+	<?php
+	$images = get_field('images');
+	if( $images ): ?>
+		<div class="bg-gallery">
+			<?php foreach( $images as $image ): ?>
+				<div class="bg-gallery-img" style="background-image: url(<?php echo $image['url']; ?>)"></div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
+
 	<div class="site-content">
