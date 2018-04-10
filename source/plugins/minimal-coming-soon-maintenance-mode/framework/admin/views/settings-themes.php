@@ -471,7 +471,7 @@ array_unshift($themes, array('name' => 'Default', 'name_clean' => 'default', 'st
     }
     echo '</span>';
     if ($theme['status'] != 'free') {
-      echo '<div class="ribbon"><i>PRO</i></div>';
+      echo '<div class="ribbon" title="' . ucfirst($theme['status']) . ' theme. Click \'Get this theme\' for more info."><i><span class="dashicons dashicons-star-filled"></span></i></div>';
     }
     echo '</div>';
   } // foreach theme

@@ -1,7 +1,7 @@
 <div class="signals-tile" id="pro">
 	<div class="signals-tile-body">
-		<div class="signals-tile-title">Coming Soon &amp; Maintenance Mode PRO</div>
-		<p>PRO version of the plugin gives you acces tu numerous <a href="<?php echo csmm_generate_web_link('pro-header', '/features/'); ?>" target="_blank">advanced features</a> including best-in-class SEO options, gallery of 400,000+ images, 40+ themes, 10+ page modules, and refined access control options.</p>
+		<div class="signals-tile-title">Coming Soon &amp; Maintenance Mode PRO - Save time &amp; money when building pages</div>
+		<p>PRO version of the plugin gives you access to numerous <a href="<?php echo csmm_generate_web_link('pro-header', '/features/'); ?>" target="_blank">advanced features</a> including best-in-class SEO options, gallery of 400,000+ images, 40+ themes, 10+ page modules, and refined access control options.</p>
 
 		<div class="signals-section-content">
 

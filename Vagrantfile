@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
     config.ssh.username = "vagrant"
     config.ssh.password = "vagrant"
     config.vm.box = "scotch/box"
-    config.vm.box_version = "2.5"
+    config.vm.box_version = ">= 0"
     config.vm.network "private_network", ip: "192.168.33.44"
     config.vm.hostname = "scotchbox"
     config.vm.synced_folder ".", "/var/www/carpelanther.dev", :mount_options => ["dmode=777","fmode=666"]

@@ -23,9 +23,9 @@ There is a script that is scheduled to run post `npm install` which will downloa
   * We use this to sync back and forth from the Staging database.
 
 # Setup
-1. Make URL pretty for development
+1. Make proxy url for dev / browsersync
   - Edit your host file `sudo nano /etc/hosts`
-  - Add this line: `192.168.33.10 carpelanther.dev`
+  - Add this line: `192.168.33.44 carpelanther.dev`
   - control + o
   - return
   - control + x
@@ -35,8 +35,9 @@ There is a script that is scheduled to run post `npm install` which will downloa
 4. `vagrant up`
 5. `gulp`
 7. Setup WordPress with whatever username and password
-8. Go to Tools > Migrate DB
-9. Do a "pull" from the staging site to get the latest.
+8. Activate plugins
+9. Go to Tools > Migrate DB
+10. Do a "pull" from the staging site to get the latest.
   * If there isn't already a migration profile in there named "Staging to Local", then you will have to make a new one.
   * Select "Pull"
   * Enter:
@@ -45,8 +46,11 @@ https://carpelanther.com
 xHP+Le/VmTvnHRY+KeSVAaTU8yd5Rh/d
   ```
   * Check "Media Files"
-  * Check "Save Profile" and name it "Staging to Local +Media"
-  * Click Migrate DB.
+  * Check "Save Profile" for ease later
+    something similar
+  * Click Migrate DB
+  * Log back in with real creds
+  * NOTE: if you can't access pages other than the home page, you may have to update the site urls using sequelpro as outlined below.
 
 ## Accessing the database
 - Using SequelPro (http://www.sequelpro.com/)
@@ -55,7 +59,7 @@ xHP+Le/VmTvnHRY+KeSVAaTU8yd5Rh/d
 - MySQL Host: 127.0.0.1
 - Username: root
 - Password: root
-- SSH Host: 192.168.33.10
+- SSH Host: 192.168.33.44
 - SSH User: vagrant
 - SSH Password: vagrant
 - Connect

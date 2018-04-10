@@ -114,7 +114,7 @@ function csmm_admin_settings() {
       'title'         => strip_tags( $_POST['signals_csmm_title'] ),
 			'description' 				=> strip_tags( $_POST['signals_csmm_description'] ),
 			'header_text' 			=> strip_tags( $_POST['signals_csmm_header'] ),
-			'secondary_text' 		=> strip_tags( $_POST['signals_csmm_secondary'] ),
+			'secondary_text' 		=> strip_tags( $_POST['signals_csmm_secondary'], '<p><a><b><strong><i><br>' ),
 			'antispam_text' 		=> strip_tags( $_POST['signals_csmm_antispam'] ),
 			'custom_login_url' 		=> strip_tags( $_POST['signals_csmm_custom_login'] ),
 			'show_logged_in' 		=> $tmp_options['logged'],

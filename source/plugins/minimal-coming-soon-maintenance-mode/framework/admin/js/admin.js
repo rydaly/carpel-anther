@@ -187,6 +187,17 @@ function getUploader( $text, $target ) {
       return false;
     });
 
+    $('#background_image_filter').on('change', function(e) {
+      filter = $(this).val();
+      image = $('#background-preview img');
+      if (!image.length) {
+        return;
+      }
+
+      $(image).removeClass();
+      $(image).addClass(filter);
+    }).trigger('change');
+
     $('#header-status').on('click', function(e) {
       e.preventDefault();
       window.location = $(this).data('action-url');

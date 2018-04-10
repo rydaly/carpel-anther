@@ -4,7 +4,7 @@ Tags: coming soon, coming soon page, launch page, maintenance mode, mailchimp, c
 Requires at least: 4.0
 Requires PHP: 5.2
 Tested up to: 4.9
-Stable tag: 1.60
+Stable tag: 1.62
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,7 +19,7 @@ It's simple + flexible and works with any WordPress theme & plugin, plus you'll 
 
 = Plugin Features =
 
-* check out <a href="https://comingsoonwp.com/themes/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=themes">30+ themes</a> that come with the PRO version
+* check out <a href="https://comingsoonwp.com/themes/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=themes">40+ themes</a> that come with the PRO version as well as <a href="https://comingsoonwp.com/image-filters/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=instagram-filters">26+ Instagram filters</a>
 * Works with all WordPress themes and plugins
 * Completely customizable look and feel including background color, cover image, fonts, logo etc
 * includes <a href="https://comingsoonwp.com/?utm_source=wordpressorg&utm_medium=content&utm_campaign=readme&utm_content=400_images">400,000 premium images</a> in PRO version
@@ -39,6 +39,10 @@ It's simple + flexible and works with any WordPress theme & plugin, plus you'll 
 * Uses HTML5 & CSS3
 * Powerful Options Panel
 * Get support from within the options panel - send a message directly to support agents, get a response ASAP
+
+= PRO Version Overview =
+
+[youtube https://www.youtube.com/watch?v=-bEJ-mPpduM]
 
 
 == Installation ==
@@ -76,6 +80,11 @@ Yes and no. When activated it enables itself across the entire WP-MU network.
 
 
 == Changelog ==
+
+= 1.62 =
+* 2018-03-19
+* 50k installations hit on 2018-03-09
+* some HTML tags are now allowed in the page content
 
 = 1.60 =
 * 2018-03-06

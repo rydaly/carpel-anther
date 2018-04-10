@@ -154,8 +154,7 @@ const syncOpts = {
   },
   open: true,
   notify: true,
-  ghostMode: false,
-  ui: false
+  logLevel: 'debug'
 };
 
 // browser-sync

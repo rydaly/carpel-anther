@@ -58,7 +58,7 @@
 					</div>
 				</div>
 
-				<div class="signals-form-group border-fix">
+				<div class="signals-form-group border-fix" id="background-preview">
 					<div class="signals-upload-element">
 						<label class="signals-strong"><?php _e( 'Background Cover Image', 'signals' ); ?></label>
 
@@ -89,41 +89,41 @@
 
       <div class="signals-form-group">
           <label for="background_image_filter" class="signals-strong">Background Image Filter<sup>PRO</sup></label>
-          <select name="background_image_filter" class="skip-save pro-option" id="background_image_filter">
+          <select name="background_image_filter" class="skip-save" id="background_image_filter">
             <?php
             $filters = array(
               array('val'=> '', 'label' => 'No Filter'),
-              array('label' => '1977', 'val' => '-1'),
-              array('label' => 'Aden', 'val' => '-1'),
-              array('label' => 'Black & White', 'val' => '-1'),
-              array('label' => 'Brannan', 'val' => '-1'),
-              array('label' => 'Brooklyn', 'val' => '-1'),
-              array('label' => 'Clarendon', 'val' => '-1'),
-              array('label' => 'Earlybird', 'val' => '-1'),
-              array('label' => 'Gingham', 'val' => '-1'),
-              array('label' => 'Hudson', 'val' => '-1'),
-              array('label' => 'Inkwell', 'val' => '-1'),
-              array('label' => 'Kelvin', 'val' => '-1'),
-              array('label' => 'Lark', 'val' => '-1'),
-              array('label' => 'Lo-Fi', 'val' => '-1'),
-              array('label' => 'Maven', 'val' => '-1'),
-              array('label' => 'Mayfair', 'val' => '-1'),
-              array('label' => 'Moon', 'val' => '-1'),
-              array('label' => 'Nashville', 'val' => '-1'),
-              array('label' => 'Perpetua', 'val' => '-1'),
-              array('label' => 'Reyes', 'val' => '-1'),
-              array('label' => 'Rise', 'val' => '-1'),
-              array('label' => 'Slumber', 'val' => '-1'),
-              array('label' => 'Stinson', 'val' => '-1'),
-              array('label' => 'Toaster', 'val' => '-1'),
-              array('label' => 'Valencia', 'val' => '-1'),
-              array('label' => 'Walden', 'val' => '-1'),
-              array('label' => 'Willow', 'val' => '-1'),
-              array('label' => 'X-pro II', 'val' => '-1')
+              array('label' => '1977', 'val' => ' _1977'),
+              array('label' => 'Aden', 'val' => ' aden'),
+              array('label' => 'Black & White', 'val' => ' blackwhite'),
+              array('label' => 'Brannan', 'val' => ' brannan'),
+              array('label' => 'Brooklyn', 'val' => ' brooklyn'),
+              array('label' => 'Clarendon', 'val' => ' clarendon'),
+              array('label' => 'Earlybird', 'val' => ' earlybird'),
+              array('label' => 'Gingham', 'val' => ' gingham'),
+              array('label' => 'Hudson', 'val' => ' hudson'),
+              array('label' => 'Inkwell', 'val' => ' inkwell'),
+              array('label' => 'Kelvin', 'val' => ' kelvin'),
+              array('label' => 'Lark', 'val' => ' lark'),
+              array('label' => 'Lo-Fi', 'val' => ' lofi'),
+              array('label' => 'Maven', 'val' => ' maven'),
+              array('label' => 'Mayfair', 'val' => ' mayfair'),
+              array('label' => 'Moon', 'val' => ' moon'),
+              array('label' => 'Nashville', 'val' => ' nashville'),
+              array('label' => 'Perpetua', 'val' => ' perpetua'),
+              array('label' => 'Reyes', 'val' => ' reyes'),
+              array('label' => 'Rise', 'val' => ' rise'),
+              array('label' => 'Slumber', 'val' => ' slumber'),
+              array('label' => 'Stinson', 'val' => ' stinson'),
+              array('label' => 'Toaster', 'val' => ' toaster'),
+              array('label' => 'Valencia', 'val' => ' valencia'),
+              array('label' => 'Walden', 'val' => ' walden'),
+              array('label' => 'Willow', 'val' => ' willow'),
+              array('label' => 'X-pro II', 'val' => ' xpro2')
             );
             csmm_create_select_options( $filters, '' );  ?>
           </select>
-          <p class="signals-form-help-block">Filter are instantly applied on the background image. Check out <a target="_blank" href="<?php echo csmm_generate_web_link('design-filters', 'image-filters'); ?>">the previews</a>. This is a <a href="#pro" class="csmm-change-tab">PRO feature</a>.</p>
+          <p class="signals-form-help-block">Filters are instantly applied on the background image above for preview. Check out <a target="_blank" href="<?php echo csmm_generate_web_link('design-filters', 'image-filters'); ?>">the previews</a>. This is a <a href="#pro" class="csmm-change-tab">PRO feature</a>.</p>
         </div>
 
 			</div>

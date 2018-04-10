@@ -52,8 +52,8 @@ require_once 'header.php';
 				<ul class="signals-main-menu">
           <li><a href="#basic"><?php _e( 'Basic', 'signals' ); ?></a></li>
 					<li><a href="#themes"><?php _e( 'Themes', 'signals' ); ?></a></li>
+          <li><a href="#design"><?php _e( 'Design', 'signals' ); ?></a></li>
 					<li><a href="#email"><?php _e( 'Email', 'signals' ); ?></a></li>
-					<li><a href="#design"><?php _e( 'Design', 'signals' ); ?></a></li>
 					<li><a href="#form"><?php _e( 'Form', 'signals' ); ?></a></li>
 					<li><a href="#advanced"><?php _e( 'Advanced', 'signals' ); ?></a></li>
           <li><a href="#support"><?php _e( 'Support', 'signals' ); ?></a></li>

@@ -75,7 +75,7 @@
 					<label for="signals_csmm_secondary" class="signals-strong"><?php _e( 'Content', 'signals' ); ?></label>
 					<textarea name="signals_csmm_secondary" id="signals_csmm_secondary" rows="3" placeholder="<?php esc_attr_e( 'Secondary text for the maintenance page', 'signals' ); ?>"><?php echo esc_textarea( stripslashes( $signals_csmm_options['secondary_text'] ) ); ?></textarea>
 
-					<p class="signals-form-help-block"><?php _e( 'Provide secondary text for the maintenance page. It is not recommended to leave this blank.', 'signals' ); ?></p>
+					<p class="signals-form-help-block"><?php _e( 'Main content. Allowed tags: &lt;P&gt;, &lt;A&gt;, &lt;B&gt;, &lt;I&gt;, &lt;BR&gt;. If you need more complex content and an WYSIWYG editor - check out the <a class="csmm-change-tab" href="#pro">PRO version</a>.', 'signals' ); ?></p>
 				</div>
 			</div>
 
