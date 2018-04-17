@@ -19,7 +19,7 @@ const dir = {
   browserify = require( 'browserify' ),
   babelify = require( 'babelify' ),
   source = require( 'vinyl-source-stream' ),
-  sourcemaps = require('gulp-sourcemaps'),
+  sourcemaps = require( 'gulp-sourcemaps' ),
   buffer = require( 'vinyl-buffer' );
 
 // Browser-sync
@@ -81,8 +81,10 @@ var styles = {
 // CSS processing
 gulp.task( 'styles', [ 'images' ], () => {
   return gulp.src( styles.src )
-    .pipe( sass( styles.sassOpts ) )
+    .pipe( sourcemaps.init() )
+    .pipe( sass( styles.sassOpts ).on( 'error', sass.logError ) )
     .pipe( postcss( styles.processors ) )
+    .pipe( sourcemaps.write( '.' ) )
     .pipe( gulp.dest( styles.build ) )
     .pipe( browsersync ? browsersync.reload( { stream: true } ) : gutil.noop() );
 } );
@@ -102,9 +104,9 @@ gulp.task( 'js', () => {
     .pipe( source( js.filename ) )
     .pipe( buffer() )
     // .pipe( stripdebug() )
-    .pipe( sourcemaps.init({ loadMaps: true }) )
+    .pipe( sourcemaps.init( { loadMaps: true } ) )
     .pipe( uglify() )
-    .pipe( sourcemaps.write('./') )
+    .pipe( sourcemaps.write( './' ) )
     .pipe( gulp.dest( js.build ) )
     .pipe( browsersync ? browsersync.reload( { stream: true } ) : gutil.noop() );
 } );
@@ -153,8 +155,7 @@ const syncOpts = {
     target: "carpelanther.dev"
   },
   open: true,
-  notify: true,
-  logLevel: 'debug'
+  notify: false
 };
 
 // browser-sync

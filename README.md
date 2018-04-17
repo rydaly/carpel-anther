@@ -50,7 +50,7 @@ xHP+Le/VmTvnHRY+KeSVAaTU8yd5Rh/d
     something similar
   * Click Migrate DB
   * Log back in with real creds
-  * NOTE: if you can't access pages other than the home page, you may have to update the site urls using sequelpro as outlined below.
+  * NOTE: In rare cases, if you can't access pages other than the home page, you may have to update the site urls in the database using SequelPro as outlined below.
 
 ## Accessing the database
 - Using SequelPro (http://www.sequelpro.com/)
