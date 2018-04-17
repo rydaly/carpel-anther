@@ -35,7 +35,10 @@ body.home {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	border: $padding-4 solid $color__background-body;
+
+	@include md {
+		border: $padding-4 solid $color__background-body;
+	}
 
 	.site-content,
 	.site-footer,
@@ -44,7 +47,39 @@ body.home {
 	}
 
 	.site-header {
-		svg.carpel-anther-logo {
+		display: flex;
+		align-items: center;
+		background-color: $brand-darker;
+		color: $brand-light-text;
+		padding: $padding-4;
+
+		&.menu-open {
+			// flex: 1 0 100vh;
+	    // flex-direction: column;
+	    // align-items: flex-start;
+		}
+
+		img.logo {
+			width: auto;
+			height: $mobile-header-graphic-height;
+			vertical-align: middle;
+		}
+
+		.mobile-navigation {
+			margin-left: auto;
+			height: $mobile-header-graphic-height;
+
+			.menu-toggle img {
+				width: auto;
+				height: $mobile-header-graphic-height;
+			}
+		}
+
+		@include md {
+			background-color: transparent;
+		}
+
+		svg.logo {
 			width: 158px;
 
 			path {
@@ -58,11 +93,11 @@ body.home {
 				}
 			}
 		}
-	}
+	} // end .site-header
 
 	.site-content {
 		flex: 1;
-		padding: 1.5rem;
+		padding: $padding-4;
 		background-color: $color__background-content;
 		z-index: -1;
 	}
@@ -83,9 +118,8 @@ body.home {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	// z-index: 0;
 	background-color: $color__background-content;
-	padding: 3rem; // TODO :: make a variable for 1.5rem - $site-padding
+	padding: $padding-5;
 	padding-left: 12rem; // TODO :: make a variable for logo width - use here
 }
 

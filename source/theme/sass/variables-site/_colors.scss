@@ -1,7 +1,9 @@
 $brand-dark: #504d4b;
+$brand-darker: #231f20;
 $brand-light: #f8f7f2;
 $brand-white: #fff;
-$brand-dark-text: #231f20;
+
+$brand-dark-text: $brand-darker;
 $brand-light-text: $brand-light;
 
 $color__background-body: $brand-light;

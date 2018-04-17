@@ -7,18 +7,17 @@
 var Navigation = ( function ( ) {
 	var container, button, menu, links, i, len;
 
-	container = document.getElementById( 'site-navigation' );
+	container = document.getElementById( 'masthead' );
 	if ( ! container ) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button = container.querySelector( '.menu-toggle' );
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
 
-	menu = container.getElementsByTagName( 'ul' )[0];
-
+	menu = document.getElementById( 'mobile-menu' );
 	// Hide menu toggle button if menu is empty and return early.
 	if ( 'undefined' === typeof menu ) {
 		button.style.display = 'none';
@@ -31,12 +30,12 @@ var Navigation = ( function ( ) {
 	}
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
+		if ( -1 !== container.className.indexOf( 'menu-open' ) ) {
+			container.className = container.className.replace( ' menu-open', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
-			container.className += ' toggled';
+			container.className += ' menu-open';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}

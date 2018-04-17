@@ -1,0 +1,12 @@
+.hidden-mobile {
+  display: none;
+  @include md {
+    display: inherit;
+  }
+}
+
+.hidden-desktop {
+  @include md {
+    display: none;
+  }
+}

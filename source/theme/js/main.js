@@ -6,7 +6,6 @@ var BackgroundGallery = require( './modules/bgImageGallery' );
 // var MobileMenu = require( './modules/mobileMenu' );
 
 jQuery( document ).ready( function ( $ ) {
-  console.log('INIT MAIN :: ');
   // Nav.init();
   // MobileMenu.init();
   BackgroundGallery.init();

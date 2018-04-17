@@ -1,3 +1,5 @@
+// TODO :: add arrow navigation
+
 var BackgroundGallery = ( function ( $ ) {
 
   var _imgs, _slideIndex = 1;

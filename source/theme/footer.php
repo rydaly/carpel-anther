@@ -15,8 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 
-		<nav class="main-navigation main-navigation--lower">
-			<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'carpel-anther' ); ?></button>
+		<nav class="main-navigation main-navigation--lower hidden-mobile">
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-2',

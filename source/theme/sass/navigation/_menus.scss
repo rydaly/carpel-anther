@@ -1,6 +1,10 @@
 .main-navigation {
-	display: block;
+	display: none;
 	background-color: $color__background-body;
+
+	@include md {
+		display: block;
+	}
 
 	ul {
 		display: none;
@@ -8,43 +12,15 @@
 		margin: 0;
 		padding-left: 0;
 
-		// ul {
-		// 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-		// 	float: left;
-		// 	position: absolute;
-		// 	top: 100%;
-		// 	left: -999em;
-		// 	z-index: 99999;
-    //
-		// 	ul {
-		// 		left: -999em;
-		// 		top: 0;
-		// 	}
-    //
-		// 	li {
-		// 		&:hover > ul,
-		// 		&.focus > ul {
-		// 			left: 100%;
-		// 		}
-		// 	}
-    //
-		// 	a {
-		// 		width: 200px;
-		// 	}
-    //
-		// 	:hover > a,
-		// 	.focus > a {
-		// 	}
-    //
-		// 	a:hover,
-		// 	a.focus {
-		// 	}
-		// }
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
+
+		@include md {
+			display: block;
+		}
+
 	}
 
 	li {
@@ -102,21 +78,48 @@
 
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+
+
+/****************
+	Mobile Menu
+****************/
+
+// container
+nav.mobile-navigation {
+
+	.menu-toggle,
+	.menu-mobile-menu-container {
+		@include md {
+			display: none;
+		}
+	}
+
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
+#mobile-menu {
+	display: none;
+	opacity: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	a {
+		color: $brand-light;
+		text-decoration: none;
 	}
-	.main-navigation ul {
+
+	&[aria-expanded="true"] {
 		display: block;
+		opacity: 1;
 	}
+
 }
 
+
+
+/****************
+	Mobile Menu
+****************/
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
